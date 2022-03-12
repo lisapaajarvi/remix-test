@@ -9,4 +9,6 @@ title: Marsvinsmat
 - morötter
 - ärtplättar
 - maskrosblad
+- tomat
+- äpple
 - med mera...
