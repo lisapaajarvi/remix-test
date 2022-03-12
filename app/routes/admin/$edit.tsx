@@ -18,8 +18,8 @@ type PostError = {
 };
 
 export const loader: LoaderFunction = async ({ params }) => {
-  invariant(params.slug, "expected params.slug");
-  return json(await getPostToEdit(params.slug));
+  invariant(params.edit, "expected params.edit");
+  return json(await getPostToEdit(params.edit));
 };
 
 export const action: ActionFunction = async ({ request }) => {
@@ -52,7 +52,6 @@ export default function EditPost() {
   const post = useLoaderData();
   const errors = useActionData();
   const transition = useTransition();
-  console.log(post);
 
   return (
     <Form method="post">
